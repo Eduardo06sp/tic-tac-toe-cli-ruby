@@ -5,6 +5,12 @@ def start_new_game
   answer = gets.chomp
 
   if answer == "y"
+    puts "What would you like Player 1 to be named?"
+    player_1_name = gets.chomp
+
+    puts "What would you like Player 2 to be named?"
+    player_2_name = gets.chomp
+
   else
   end
 end
