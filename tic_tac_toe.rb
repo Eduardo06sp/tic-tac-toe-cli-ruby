@@ -3,4 +3,8 @@ def start_new_game
   puts "Please enter y (yes) or n (no)."
 
   answer = gets.chomp
+
+  if answer == "y"
+  else
+  end
 end
