@@ -11,7 +11,13 @@ class GenerateNewGame
       :space_6,
       :space_7,
       :space_8,
-      :space_9
+      :space_9,
+      :available_spaces,
+      :game_board,
+      :p1_name,
+      :p2_name,
+      :p1_sign,
+      :p2_sign
 
     @space_1 = "1"
     @space_2 = "2"
