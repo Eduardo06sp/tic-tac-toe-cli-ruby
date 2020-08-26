@@ -1,4 +1,6 @@
 class GenerateNewGame
+  def initialize(p1, p2, p1_sign)
+  end
 end
 
 def validate_input(values, input)
