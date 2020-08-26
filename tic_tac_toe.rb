@@ -18,12 +18,12 @@ def start_new_game
     player_2_name = gets.chomp
 
     puts "#{player_1_name}, please choose a sign: "X" or "O""
-    player_1_sign = gets.chomp
+    player_1_sign = gets.chomp.upcase
     if validate_input(["x", "O"], player_1_sign)
       continue
     else
       puts "Please input "X" or "O""
-      player_1_sign = gets.chomp
+      player_1_sign = gets.chomp.upcase
     end
   else
   end
