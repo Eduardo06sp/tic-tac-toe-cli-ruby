@@ -2,6 +2,16 @@ class GenerateNewGame
   def initialize(p1, p2, p1_sign)
     @@player_1_score = 0
     @@player_2_score = 0
+
+    attr_reader :space_1,
+      :space_2,
+      :space_3,
+      :space_4,
+      :space_5,
+      :space_6,
+      :space_7,
+      :space_8,
+      :space_9
   end
 end
 
