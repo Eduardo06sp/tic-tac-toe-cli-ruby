@@ -12,6 +12,16 @@ class GenerateNewGame
       :space_7,
       :space_8,
       :space_9
+
+    @space_1 = "1"
+    @space_2 = "2"
+    @space_3 = "3"
+    @space_4 = "4"
+    @space_5 = "5"
+    @space_6 = "6"
+    @space_7 = "7"
+    @space_8 = "8"
+    @space_9 = "9"
   end
 end
 
