@@ -26,5 +26,7 @@ def start_new_game
       player_1_sign = gets.chomp.upcase
     end
   else
+    puts "Have a beautiful day. :}"
+    return
   end
 end
