@@ -46,6 +46,11 @@ class GenerateNewGame
       space_8,
       space_9,
     ]
+
+    @game_board =
+      "#{@space_1} | #{@space_2} | #{@space_3} \n
+      #{@space_4} | #{@space_5} | #{@space_6} \n
+      #{@space_7} | #{@space_8} | #{@space_9}"
   end
 end
 
