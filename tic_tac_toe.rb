@@ -57,6 +57,11 @@ class GenerateNewGame
       "#{@space_1} | #{@space_2} | #{@space_3} \n
       #{@space_4} | #{@space_5} | #{@space_6} \n
       #{@space_7} | #{@space_8} | #{@space_9}"
+
+    @player1_name = p1
+    @player2_name = p2
+    @player1_sign = p1_sign
+    @player2_sign = p2_sign
   end
 end
 
