@@ -143,6 +143,8 @@ def end_game(outcome)
     puts "#{player_1_name} won the match!"
   elsif outcome == player_2_sign
     puts "#{player_2_name} won the match!"
+  else
+    puts "Game ends in a tie."
   end
 end
 
