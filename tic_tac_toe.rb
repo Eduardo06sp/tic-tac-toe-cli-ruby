@@ -153,9 +153,11 @@ def game_over
   end
 
   win_possibilities.each do |win_array|
-    (win_array.all? do |space|
+    if (win_array.all? do |space|
       spaces[space - 1] == "X"
     end)
+      end_game("X")
+    end
     ||
     (win_array.all? do |space|
       spaces[space - 1] == "O"
