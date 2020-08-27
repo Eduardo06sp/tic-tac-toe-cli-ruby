@@ -97,3 +97,6 @@ def start_new_game
     return
   end
 end
+
+def play
+end
