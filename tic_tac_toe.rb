@@ -148,6 +148,8 @@ def end_game(outcome)
   else
     puts "Game ends in a tie."
   end
+
+  start_new_game
 end
 
 def game_over
