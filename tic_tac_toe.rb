@@ -137,7 +137,7 @@ class GenerateNewGame
       [1, 5, 9]
     ]
 
-    if available_spaces.length = 0
+    if available_spaces.length == 0
       end_game(nil)
     end
 
