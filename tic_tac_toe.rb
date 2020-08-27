@@ -174,7 +174,7 @@ def start_new_game
 
     puts '#{player_1_name}, please choose a sign: "X" or "O"'
     player_1_sign = gets.chomp.upcase
-    if GenerateNewGame.validate_input(["x", "O"], player_1_sign)
+    if GenerateNewGame.validate_input(["X", "O"], player_1_sign)
       continue
     else
       puts 'Please input "X" or "O"'
