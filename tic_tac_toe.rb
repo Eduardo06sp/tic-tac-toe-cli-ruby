@@ -1,5 +1,5 @@
 class GenerateNewGame
-  def initialize(p1, p2, p1_sign)
+  def initialize(p1, p2, p1_sign, p2_sign)
     @@player_1_score = 0
     @@player_2_score = 0
 
