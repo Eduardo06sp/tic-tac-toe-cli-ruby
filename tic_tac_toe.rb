@@ -188,3 +188,5 @@ def start_new_game
     return
   end
 end
+
+start_new_game
