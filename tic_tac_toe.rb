@@ -121,7 +121,7 @@ def play
 end
 
 def turn(name, sign)
-  puts "#{player1_name} (#{player1_sign}) it's your turn."
+  puts "#{name} (#{sign}) it's your turn."
   puts "Please select an open spot."
   move = gets.chomp
 
