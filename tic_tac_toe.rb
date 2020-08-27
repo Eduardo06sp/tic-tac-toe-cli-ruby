@@ -101,5 +101,9 @@ end
 def play
   while !(game_over)
     turn = p1
+
+    puts "#{player1_name} (#{player1_sign}) it's your turn."
+    puts "Please select an open spot."
+    move = gets.chomp
   end
 end
