@@ -102,10 +102,6 @@ def play
   while !(game_over)
     turn = p1
 
-    puts "#{player1_name} (#{player1_sign}) it's your turn."
-    puts "Please select an open spot."
-    move = gets.chomp
-
     if validate_input(available_spaces, move)
       if turn == p1
         turn(player_1_name, player_1_sign)
@@ -125,6 +121,11 @@ def play
 end
 
 def turn(name, sign)
+  puts "#{player1_name} (#{player1_sign}) it's your turn."
+  puts "Please select an open spot."
+  move = gets.chomp
+
+
   spaces[move - 1]=(sign)
   available_spaces.delete(spaces[move - 1])
 
