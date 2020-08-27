@@ -64,7 +64,7 @@ class GenerateNewGame
     @player2_sign = p2_sign
   end
 
-  def validate_input(values, input)
+  def self.validate_input(values, input)
     values.any? do |value|
       value == input
     end
@@ -75,7 +75,7 @@ class GenerateNewGame
     while !(game_over)
       turn = p1
 
-      if validate_input(available_spaces, move)
+      if self.validate_input(available_spaces, move)
         check_turn(turn)
       else
         puts "That space is unavailable.
@@ -174,7 +174,7 @@ def start_new_game
 
     puts '#{player_1_name}, please choose a sign: "X" or "O"'
     player_1_sign = gets.chomp.upcase
-    if validate_input(["x", "O"], player_1_sign)
+    if GenerateNewGame.validate_input(["x", "O"], player_1_sign)
       continue
     else
       puts 'Please input "X" or "O"'
