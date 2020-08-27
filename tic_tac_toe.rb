@@ -125,7 +125,7 @@ def play
 end
 
 def turn(name, sign)
-  spaces[move - 1]=(player_1_sign)
+  spaces[move - 1]=(sign)
   available_spaces.delete(spaces[move - 1])
 
   puts game_board
