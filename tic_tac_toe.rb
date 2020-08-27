@@ -109,7 +109,7 @@ def play
       \nPlease type in one of the following available spaces: 
       #{available_spaces}"
 
-      move = gets.chomp
+      check_turn(turn)
     end
   end
 end
