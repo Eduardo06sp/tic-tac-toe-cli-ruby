@@ -147,4 +147,7 @@ def game_over
     [3, 5, 7],
     [1, 5, 9]
   }
+
+  win_possibilities.each do |win_array|
+  end
 end
