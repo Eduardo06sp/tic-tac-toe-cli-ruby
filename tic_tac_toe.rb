@@ -103,13 +103,6 @@ def play
     turn = p1
 
     if validate_input(available_spaces, move)
-      if turn == p1
-        turn(player_1_name, player_1_sign)
-        turn = p2
-      else
-        turn(player_2_name, player_2_sign)
-        turn = p1
-      end
     else
       puts "That space is unavailable.
       \nPlease type in one of the following available spaces: 
@@ -133,4 +126,11 @@ def turn(name, sign)
 end
 
 def check_turn(player_turn)
+  if turn == p1
+    turn(player_1_name, player_1_sign)
+    turn = p2
+  else
+    turn(player_2_name, player_2_sign)
+    turn = p1
+  end
 end
