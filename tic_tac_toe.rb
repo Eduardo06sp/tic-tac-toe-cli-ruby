@@ -70,35 +70,6 @@ class GenerateNewGame
     end
   end
 
-  def start_new_game
-    puts "Would you like to play Tic-Tac-Toe?"
-    puts "Please enter y (yes) or n (no)."
-
-    answer = gets.chomp
-
-    if answer == "y"
-      puts "What would you like Player 1 to be named?"
-      player_1_name = gets.chomp
-
-      puts "What would you like Player 2 to be named?"
-      player_2_name = gets.chomp
-
-      puts '#{player_1_name}, please choose a sign: "X" or "O"'
-      player_1_sign = gets.chomp.upcase
-      if validate_input(["x", "O"], player_1_sign)
-        continue
-      else
-        puts 'Please input "X" or "O"'
-        player_1_sign = gets.chomp.upcase
-      end
-
-      player_1_sign == "X" ? player_2_sign = "O" : player_2_sign = "X"
-      game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
-    else
-      puts "Have a beautiful day. :}"
-      return
-    end
-  end
 
   def play
     while !(game_over)
@@ -185,5 +156,35 @@ class GenerateNewGame
         end_game("O")
       end
     end
+  end
+end
+
+def start_new_game
+  puts "Would you like to play Tic-Tac-Toe?"
+  puts "Please enter y (yes) or n (no)."
+
+  answer = gets.chomp
+
+  if answer == "y"
+    puts "What would you like Player 1 to be named?"
+    player_1_name = gets.chomp
+
+    puts "What would you like Player 2 to be named?"
+    player_2_name = gets.chomp
+
+    puts '#{player_1_name}, please choose a sign: "X" or "O"'
+    player_1_sign = gets.chomp.upcase
+    if validate_input(["x", "O"], player_1_sign)
+      continue
+    else
+      puts 'Please input "X" or "O"'
+      player_1_sign = gets.chomp.upcase
+    end
+
+    player_1_sign == "X" ? player_2_sign = "O" : player_2_sign = "X"
+    game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
+  else
+    puts "Have a beautiful day. :}"
+    return
   end
 end
