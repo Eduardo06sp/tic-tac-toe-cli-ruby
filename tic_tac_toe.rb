@@ -1,5 +1,6 @@
 class GenerateNewGame
-    attr_reader :space_1,
+    attr_reader :spaces,
+      :space_1,
       :space_2,
       :space_3,
       :space_4,
