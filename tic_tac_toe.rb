@@ -105,5 +105,8 @@ def play
     puts "#{player1_name} (#{player1_sign}) it's your turn."
     puts "Please select an open spot."
     move = gets.chomp
+
+    if validate_input(available_spaces, move)
+    end
   end
 end
