@@ -107,11 +107,6 @@ def play
     move = gets.chomp
 
     if validate_input(available_spaces, move)
-      spaces[move - 1]=(player_1_sign)
-      available_spaces.delete(spaces[move - 1])
-
-      puts game_board
-
       if turn == p1
         turn = p2
       else
@@ -128,4 +123,8 @@ def play
 end
 
 def turn(name, sign)
+  spaces[move - 1]=(player_1_sign)
+  available_spaces.delete(spaces[move - 1])
+
+  puts game_board
 end
