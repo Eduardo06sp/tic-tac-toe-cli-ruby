@@ -136,6 +136,9 @@ def check_turn(player_turn)
   end
 end
 
+def end_game(outcome)
+end
+
 def game_over
   win_possibilities = {
     [1, 2, 3],
