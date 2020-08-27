@@ -138,6 +138,10 @@ end
 
 def end_game(outcome)
   puts "Game over!"
+
+  if outcome == player_1_sign
+    puts "#{player_1_name} won the match!"
+  end
 end
 
 def game_over
