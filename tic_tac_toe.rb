@@ -141,6 +141,8 @@ def end_game(outcome)
 
   if outcome == player_1_sign
     puts "#{player_1_name} won the match!"
+  elsif outcome == player_2_sign
+    puts "#{player_2_name} won the match!"
   end
 end
 
