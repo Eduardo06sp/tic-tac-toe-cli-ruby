@@ -137,6 +137,7 @@ def check_turn(player_turn)
 end
 
 def end_game(outcome)
+  puts "Game over!"
 end
 
 def game_over
