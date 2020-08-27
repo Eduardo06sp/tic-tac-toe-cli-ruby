@@ -126,3 +126,6 @@ def play
     end
   end
 end
+
+def turn(name, sign)
+end
