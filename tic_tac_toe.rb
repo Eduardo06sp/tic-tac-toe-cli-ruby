@@ -117,6 +117,12 @@ def play
       else
         turn = p1
       end
+    else
+      puts "That space is unavailable.
+      \nPlease type in one of the following available spaces: 
+      #{available_spaces}"
+
+      move = gets.chomp
     end
   end
 end
