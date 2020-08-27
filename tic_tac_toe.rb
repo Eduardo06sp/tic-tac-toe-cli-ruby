@@ -149,5 +149,8 @@ def game_over
   }
 
   win_possibilities.each do |win_array|
+    win_array.all? do |space|
+      spaces[space - 1] == "X"
+    end
   end
 end
