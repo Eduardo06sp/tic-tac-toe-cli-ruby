@@ -67,7 +67,7 @@ end
 
 def validate_input(values, input)
   values.any? do |value|
-    value == input ? return true : return false
+    value == input
   end
 end
 
