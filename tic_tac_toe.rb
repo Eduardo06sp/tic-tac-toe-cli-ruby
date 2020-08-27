@@ -99,4 +99,6 @@ def start_new_game
 end
 
 def play
+  while !(game_over)
+  end
 end
