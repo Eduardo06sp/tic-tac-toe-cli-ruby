@@ -100,5 +100,6 @@ end
 
 def play
   while !(game_over)
+    turn = p1
   end
 end
