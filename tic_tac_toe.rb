@@ -111,6 +111,12 @@ def play
       available_spaces.delete(spaces[move - 1])
 
       puts game_board
+
+      if turn == p1
+        turn = p2
+      else
+        turn = p1
+      end
     end
   end
 end
