@@ -177,7 +177,9 @@ def game_over
     end)
       end_game("X")
     end
-    ||
+  end
+
+  win_possibilities.each do |win_array|
     if (win_array.all? do |space|
       spaces[space - 1] == "O"
     end)
