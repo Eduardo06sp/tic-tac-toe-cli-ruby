@@ -107,6 +107,7 @@ def play
     move = gets.chomp
 
     if validate_input(available_spaces, move)
+      spaces[move - 1]=(player_1_sign)
     end
   end
 end
