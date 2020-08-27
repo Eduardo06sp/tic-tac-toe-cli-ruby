@@ -111,6 +111,7 @@ def play
         turn(player_1_name, player_1_sign)
         turn = p2
       else
+        turn(player_2_name, player_2_sign)
         turn = p1
       end
     else
