@@ -93,6 +93,7 @@ def start_new_game
       player_1_sign = gets.chomp.upcase
     end
 
+    player_1_sign == "X" ? player_2_sign = "O" : player_2_sign = "X"
     game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
   else
     puts "Have a beautiful day. :}"
