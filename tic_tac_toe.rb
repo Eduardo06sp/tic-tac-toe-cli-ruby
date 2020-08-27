@@ -148,6 +148,10 @@ def game_over
     [1, 5, 9]
   }
 
+  if available_spaces.length = 0
+    end_game(nil)
+  end
+
   win_possibilities.each do |win_array|
     (win_array.all? do |space|
       spaces[space - 1] == "X"
