@@ -108,6 +108,7 @@ def play
 
     if validate_input(available_spaces, move)
       if turn == p1
+        turn(player_1_name, player_1_sign)
         turn = p2
       else
         turn = p1
