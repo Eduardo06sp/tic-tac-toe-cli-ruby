@@ -135,3 +135,6 @@ def check_turn(player_turn)
     turn = p1
   end
 end
+
+def game_over
+end
