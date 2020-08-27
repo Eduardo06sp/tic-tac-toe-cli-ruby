@@ -131,3 +131,6 @@ def turn(name, sign)
 
   puts game_board
 end
+
+def check_turn(player_turn)
+end
