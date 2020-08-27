@@ -159,8 +159,10 @@ def game_over
       end_game("X")
     end
     ||
-    (win_array.all? do |space|
+    if (win_array.all? do |space|
       spaces[space - 1] == "O"
     end)
+      end_game("O")
+    end
   end
 end
