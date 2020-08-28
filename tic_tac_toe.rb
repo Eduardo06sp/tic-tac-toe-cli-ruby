@@ -76,15 +76,6 @@ class GenerateNewGame
     while !(game_over)
       turn = p1
 
-      if self.validate_input(available_spaces, move)
-        check_turn(turn)
-      else
-        puts "That space is unavailable.
-      \nPlease type in one of the following available spaces: 
-      #{available_spaces}"
-
-        check_turn(turn)
-      end
     end
   end
 
@@ -93,6 +84,15 @@ class GenerateNewGame
     puts "Please select an open spot."
     move = gets.chomp
 
+    if self.validate_input(available_spaces, move)
+      check_turn(turn)
+    else
+      puts "That space is unavailable.
+      \nPlease type in one of the following available spaces: 
+      #{available_spaces}"
+
+      check_turn(turn)
+    end
 
     spaces[move - 1]=(sign)
     available_spaces.delete(spaces[move - 1])
