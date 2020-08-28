@@ -101,7 +101,7 @@ class GenerateNewGame
   end
 
   def check_turn(player_turn)
-    if turn == "p1"
+    if player_turn == "p1"
       turn(player_1_name, player_1_sign)
       turn = "p2"
     else
