@@ -76,6 +76,7 @@ class GenerateNewGame
     while !(game_over)
       turn = p1
 
+      check_turn(turn)
     end
   end
 
