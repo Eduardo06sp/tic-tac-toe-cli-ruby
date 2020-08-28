@@ -95,7 +95,7 @@ class GenerateNewGame
       \nPlease type in one of the following available spaces: 
       #{available_spaces}"
 
-      check_turn(turn)
+      turn(name, sign)
     end
 
   end
