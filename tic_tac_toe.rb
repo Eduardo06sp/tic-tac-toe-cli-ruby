@@ -86,7 +86,10 @@ class GenerateNewGame
     move = gets.chomp
 
     if self.validate_input(available_spaces, move)
-      check_turn(turn)
+      spaces[move - 1]=(sign)
+      available_spaces.delete(spaces[move - 1])
+
+      puts game_board
     else
       puts "That space is unavailable.
       \nPlease type in one of the following available spaces: 
@@ -95,10 +98,6 @@ class GenerateNewGame
       check_turn(turn)
     end
 
-    spaces[move - 1]=(sign)
-    available_spaces.delete(spaces[move - 1])
-
-    puts game_board
   end
 
   def check_turn(player_turn)
