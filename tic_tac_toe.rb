@@ -79,7 +79,7 @@ class GenerateNewGame
       spaces[move.to_i - 1]=(sign)
       available_spaces.delete(spaces[move.to_i - 1])
 
-      puts game_board
+      display_game_board
     else
       puts "That space is unavailable.
       \nPlease type in one of the following available spaces: 
