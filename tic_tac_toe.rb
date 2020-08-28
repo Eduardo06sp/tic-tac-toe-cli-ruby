@@ -73,7 +73,7 @@ class GenerateNewGame
 
 
   def play
-    while !(game_over)
+    while game_over
       turn = p1
 
       check_turn(turn)
