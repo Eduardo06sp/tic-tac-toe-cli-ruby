@@ -56,6 +56,11 @@ class GenerateNewGame
     end
   end
 
+  def display_game_board
+    puts "#{spaces[0]} | #{spaces[1]} | #{spaces[2]} \n
+      #{spaces[3]} | #{spaces[4]} | #{spaces[5]} \n
+      #{spaces[6]} | #{spaces[7]} | #{spaces[8]}"
+  end
 
   def play
     while game_over
