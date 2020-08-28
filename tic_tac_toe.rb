@@ -10,7 +10,6 @@ class GenerateNewGame
       :space_8,
       :space_9,
       :available_spaces,
-      :game_board,
       :player_1_name,
       :player_2_name,
       :player_1_sign,
