@@ -74,7 +74,7 @@ class GenerateNewGame
 
   def play
     while game_over
-      turn = p1
+      turn = "p1"
 
       check_turn(turn)
     end
@@ -101,12 +101,12 @@ class GenerateNewGame
   end
 
   def check_turn(player_turn)
-    if turn == p1
+    if turn == "p1"
       turn(player_1_name, player_1_sign)
-      turn = p2
+      turn = "p2"
     else
       turn(player_2_name, player_2_sign)
-      turn = p1
+      turn = "p1"
     end
   end
 
