@@ -11,10 +11,10 @@ class GenerateNewGame
       :space_9,
       :available_spaces,
       :game_board,
-      :p1_name,
-      :p2_name,
-      :p1_sign,
-      :p2_sign
+      :player_1_name,
+      :player_2_name,
+      :player_1_sign,
+      :player_2_sign
 
   def initialize(p1, p2, p1_sign, p2_sign)
     @@player_1_score = 0
@@ -59,10 +59,10 @@ class GenerateNewGame
       #{@space_4} | #{@space_5} | #{@space_6} \n
       #{@space_7} | #{@space_8} | #{@space_9}"
 
-    @player1_name = p1
-    @player2_name = p2
-    @player1_sign = p1_sign
-    @player2_sign = p2_sign
+    @player_1_name = p1
+    @player_2_name = p2
+    @player_1_sign = p1_sign
+    @player_2_sign = p2_sign
   end
 
   def self.validate_input(values, input)
