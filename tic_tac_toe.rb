@@ -43,6 +43,7 @@ class GenerateNewGame
       space_9,
     ]
 
+    @turn = "p1"
     @player_1_name = p1
     @player_2_name = p2
     @player_1_sign = p1_sign
@@ -63,8 +64,6 @@ class GenerateNewGame
 
   def play
     while game_over
-      turn = "p1"
-
       check_turn(turn)
     end
   end
