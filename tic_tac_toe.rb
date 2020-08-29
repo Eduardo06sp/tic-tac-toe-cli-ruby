@@ -10,7 +10,7 @@ class GenerateNewGame
       :space_8,
       :space_9,
       :available_spaces,
-      :turn,
+      :player_turn,
       :player_1_name,
       :player_2_name,
       :player_1_sign,
@@ -44,7 +44,7 @@ class GenerateNewGame
       space_9,
     ]
 
-    @turn = "p1"
+    @player_turn = "p1"
     @player_1_name = p1
     @player_2_name = p2
     @player_1_sign = p1_sign
@@ -65,7 +65,7 @@ class GenerateNewGame
 
   def play
     while game_over
-      check_turn(turn)
+      check_turn(player_turn)
     end
   end
 
@@ -92,10 +92,10 @@ class GenerateNewGame
   def check_turn(player_turn)
     if player_turn == "p1"
       turn(player_1_name, player_1_sign)
-      turn = "p2"
+      player_turn = "p2"
     else
       turn(player_2_name, player_2_sign)
-      turn = "p1"
+      player_turn = "p1"
     end
   end
 
