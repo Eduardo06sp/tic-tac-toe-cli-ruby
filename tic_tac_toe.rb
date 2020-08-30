@@ -32,17 +32,7 @@ class GenerateNewGame
 
     @spaces = (1..9).to_a
 
-    @available_spaces = [
-      space_1,
-      space_2,
-      space_3,
-      space_4,
-      space_5,
-      space_6,
-      space_7,
-      space_8,
-      space_9,
-    ]
+    @available_spaces = spaces.dup
 
     @player_turn = "p1"
     @player_1_name = p1
