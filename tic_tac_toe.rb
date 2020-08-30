@@ -54,7 +54,7 @@ class GenerateNewGame
   end
 
   def play
-    while game_over
+    while !(game_over)
       check_turn(player_turn)
     end
   end
