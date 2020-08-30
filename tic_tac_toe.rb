@@ -1,4 +1,7 @@
 class GenerateNewGame
+  @@player_1_score = 0
+  @@player_2_score = 0
+
     attr_accessor :player_turn
     attr_reader :spaces,
       :available_spaces,
@@ -8,8 +11,6 @@ class GenerateNewGame
       :player_2_sign
 
   def initialize(p1, p2, p1_sign, p2_sign)
-    @@player_1_score = 0
-    @@player_2_score = 0
 
     @spaces = (1..9).to_a
 
