@@ -65,8 +65,8 @@ class GenerateNewGame
     move = gets.chomp.to_i
 
     if GenerateNewGame.validate_input(available_spaces, move)
+      available_spaces.delete(spaces[move - 1])
       spaces[move - 1]=(sign)
-      available_spaces.delete(available_spaces[move - 1])
 
       display_game_board
     else
