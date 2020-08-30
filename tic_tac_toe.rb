@@ -89,6 +89,8 @@ class GenerateNewGame
 
     puts "#{player_1_name}'s score: #{@@player_1_score}"
     puts "#{player_2_name}'s score: #{@@player_2_score}"
+
+    puts "Would you like to rematch?"
     start_new_game
   end
 
