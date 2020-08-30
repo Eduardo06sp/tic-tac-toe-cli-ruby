@@ -98,7 +98,12 @@ class GenerateNewGame
       answer = gets.chomp
     end
 
-    start_new_game
+    if answer == "y"
+      game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
+      game.play
+    else
+    end
+
   end
 
   def game_over
