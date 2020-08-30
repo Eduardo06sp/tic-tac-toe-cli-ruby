@@ -168,9 +168,13 @@ def start_new_game
       player_1_sign = gets.chomp.upcase
     end
 
-  else
+  elsif answer == "n"
     puts "Have a beautiful day. :}"
     return
+
+  else
+    puts "Please type in \"y\" (yes) or \"n\" (no)."
+    answer = gets.chomp
   end
 end
 
