@@ -114,6 +114,8 @@ class GenerateNewGame
       if answer == "y"
         start_new_game
       else
+        puts "Have a beautiful day. :}"
+        return
       end
     end
   end
