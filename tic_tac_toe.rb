@@ -62,11 +62,11 @@ class GenerateNewGame
   def turn(name, sign)
     puts "#{name} (#{sign}) it's your turn."
     puts "Please select an open spot."
-    move = gets.chomp
+    move = gets.chomp.to_i
 
-    if GenerateNewGame.validate_input(available_spaces, move.to_i)
-      spaces[move.to_i - 1]=(sign)
-      available_spaces.delete(spaces[move.to_i - 1])
+    if GenerateNewGame.validate_input(available_spaces, move)
+      spaces[move - 1]=(sign)
+      available_spaces.delete(spaces[move - 1])
 
       display_game_board
     else
