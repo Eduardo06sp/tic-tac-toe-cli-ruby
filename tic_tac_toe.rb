@@ -159,14 +159,14 @@ def start_new_game
 
     puts "#{player_1_name}, please choose a sign: \"X\" or \"O\""
     player_1_sign = gets.chomp.upcase
-    if GenerateNewGame.validate_input(["X", "O"], player_1_sign)
-      player_1_sign == "X" ? player_2_sign = "O" : player_2_sign = "X"
-      game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
-      game.play
-    else
+
+    while !(GenerateNewGame.validate_input(["X", "O"], player_1_sign))
       puts 'Please input "X" or "O"'
       player_1_sign = gets.chomp.upcase
     end
+    player_1_sign == "X" ? player_2_sign = "O" : player_2_sign = "X"
+    game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
+    game.play
 
   elsif answer == "n"
     puts "Have a beautiful day. :}"
