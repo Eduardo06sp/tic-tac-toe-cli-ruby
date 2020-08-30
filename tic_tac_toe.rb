@@ -152,7 +152,7 @@ def start_new_game
     puts "What would you like Player 2 to be named?"
     player_2_name = gets.chomp
 
-    puts '#{player_1_name}, please choose a sign: "X" or "O"'
+    puts "#{player_1_name}, please choose a sign: \"X\" or \"O\""
     player_1_sign = gets.chomp.upcase
     if GenerateNewGame.validate_input(["X", "O"], player_1_sign)
       player_1_sign == "X" ? player_2_sign = "O" : player_2_sign = "X"
