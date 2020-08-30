@@ -74,6 +74,7 @@ class GenerateNewGame
       \nPlease type in one of the following available spaces: 
       #{available_spaces}"
 
+      display_game_board
       turn(name, sign)
     end
 
