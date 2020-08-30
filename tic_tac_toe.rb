@@ -60,6 +60,8 @@ class GenerateNewGame
   end
 
   def turn(name, sign)
+    display_game_board
+
     puts "#{name} (#{sign}) it's your turn."
     puts "Please select an open spot."
     move = gets.chomp.to_i
@@ -68,13 +70,11 @@ class GenerateNewGame
       available_spaces.delete(spaces[move - 1])
       spaces[move - 1]=(sign)
 
-      display_game_board
     else
       puts "That space is unavailable.
       \nPlease type in one of the following available spaces: 
       #{available_spaces}"
 
-      display_game_board
       turn(name, sign)
     end
 
