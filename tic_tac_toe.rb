@@ -103,8 +103,19 @@ class GenerateNewGame
       game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
       game.play
     else
-    end
+      puts "Start a new game?"
 
+      answer = gets.chomp
+      while !(GenerateNewGame.validate_input(["y", "n"], answer))
+        puts "Please type in \"y\" (yes) or \"n\" (no)."
+        answer = gets.chomp
+      end
+
+      if answer == "y"
+        start_new_game
+      else
+      end
+    end
   end
 
   def game_over
