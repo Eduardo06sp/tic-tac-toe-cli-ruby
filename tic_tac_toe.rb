@@ -64,7 +64,7 @@ class GenerateNewGame
     puts "Please select an open spot."
     move = gets.chomp
 
-    if GenerateNewGame.validate_input(available_spaces, move)
+    if GenerateNewGame.validate_input(available_spaces, move.to_i)
       spaces[move.to_i - 1]=(sign)
       available_spaces.delete(spaces[move.to_i - 1])
 
