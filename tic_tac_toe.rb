@@ -178,7 +178,4 @@ def start_new_game
   end
 end
 
-def rematch
-end
-
 start_new_game
