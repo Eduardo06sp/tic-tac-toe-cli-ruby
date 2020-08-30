@@ -1,15 +1,6 @@
 class GenerateNewGame
     attr_accessor :player_turn
     attr_reader :spaces,
-      :space_1,
-      :space_2,
-      :space_3,
-      :space_4,
-      :space_5,
-      :space_6,
-      :space_7,
-      :space_8,
-      :space_9,
       :available_spaces,
       :player_1_name,
       :player_2_name,
@@ -19,16 +10,6 @@ class GenerateNewGame
   def initialize(p1, p2, p1_sign, p2_sign)
     @@player_1_score = 0
     @@player_2_score = 0
-
-    @space_1 = "1"
-    @space_2 = "2"
-    @space_3 = "3"
-    @space_4 = "4"
-    @space_5 = "5"
-    @space_6 = "6"
-    @space_7 = "7"
-    @space_8 = "8"
-    @space_9 = "9"
 
     @spaces = (1..9).to_a
 
