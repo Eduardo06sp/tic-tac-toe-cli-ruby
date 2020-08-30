@@ -91,6 +91,7 @@ class GenerateNewGame
   end
 
   def end_game(outcome)
+    display_game_board
     puts "Game over!"
 
     if outcome == player_1_sign
