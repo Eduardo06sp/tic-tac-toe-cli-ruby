@@ -103,7 +103,7 @@ class GenerateNewGame
       game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
       game.play
     else
-      puts "Start a new game?"
+      puts "Restart game?"
 
       answer = gets.chomp
       while !(GenerateNewGame.validate_input(["y", "n"], answer))
