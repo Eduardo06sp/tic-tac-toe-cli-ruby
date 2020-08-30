@@ -91,6 +91,13 @@ class GenerateNewGame
     puts "#{player_2_name}'s score: #{@@player_2_score}"
 
     puts "Would you like to rematch?"
+    answer = gets.chomp
+
+    while !(GenerateNewGame.validate_input(["y", "n"], answer))
+      puts "Please type in \"y\" (yes) or \"n\" (no)."
+      answer = gets.chomp
+    end
+
     start_new_game
   end
 
