@@ -123,6 +123,7 @@ class GenerateNewGame
         spaces[space - 1] == "X"
       end)
         end_game("X")
+        return true
       end
     end
 
@@ -131,11 +132,13 @@ class GenerateNewGame
         spaces[space - 1] == "O"
       end)
         end_game("O")
+        return true
       end
     end
 
     if available_spaces.length == 0
       end_game(nil)
+      return true
     end
   end
 end
