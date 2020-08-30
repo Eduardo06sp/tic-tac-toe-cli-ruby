@@ -150,6 +150,11 @@ def start_new_game
 
   answer = gets.chomp
 
+  while !(GenerateNewGame.validate_input(["y", "n"], answer))
+    puts "Please type in \"y\" (yes) or \"n\" (no)."
+    answer = gets.chomp
+  end
+
   if answer == "y"
     puts "What would you like Player 1 to be named?"
     player_1_name = gets.chomp
@@ -168,13 +173,9 @@ def start_new_game
     game = GenerateNewGame.new(player_1_name, player_2_name, player_1_sign, player_2_sign)
     game.play
 
-  elsif answer == "n"
+  else
     puts "Have a beautiful day. :}"
     return
-
-  else
-    puts "Please type in \"y\" (yes) or \"n\" (no)."
-    answer = gets.chomp
   end
 end
 
